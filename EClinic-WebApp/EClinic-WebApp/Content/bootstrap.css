@@ -58,7 +58,8 @@ html {
 }
 
 body {
-  margin: 0;
+    background-color:#00ccff;
+      margin: 0;
   padding:0;
 }
 
@@ -163,7 +164,7 @@ button,
 input,
 select,
 textarea {
-  margin: 0;
+  margin: 0 0 0 1px;
   font-family: inherit;
   font-size: 100%;
 }
@@ -1679,7 +1680,6 @@ input[type="file"] {
 
 select[multiple],
 select[size] {
-  height: auto;
 }
 
 select optgroup {
@@ -3227,6 +3227,10 @@ input[type="button"].btn-block {
 
 .dropdown {
   position: relative;
+    top: 1px;
+    left: 23px;
+    width: 175px;
+    height: 27px;
 }
 
 .dropdown-toggle:focus {
@@ -5251,6 +5255,7 @@ a.thumbnail:focus {
 .list-group {
   padding-left: 0;
   margin-bottom: 20px;
+
 }
 
 .list-group-item {

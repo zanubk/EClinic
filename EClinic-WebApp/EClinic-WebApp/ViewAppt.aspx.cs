@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace EClinic_WebApp
 {
-    public partial class Main_Patient : System.Web.UI.Page
+    public partial class ViewAppt : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

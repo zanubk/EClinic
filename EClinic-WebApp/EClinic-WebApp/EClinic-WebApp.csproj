@@ -162,7 +162,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Main_Patient.aspx" />
+    <Content Include="MakeSchedule.aspx" />
+    <Content Include="ViewAppt.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -217,12 +218,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Main_Patient.aspx.cs">
-      <DependentUpon>Main_Patient.aspx</DependentUpon>
+    <Compile Include="MakeSchedule.aspx.cs">
+      <DependentUpon>MakeSchedule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Main_Patient.aspx.designer.cs">
-      <DependentUpon>Main_Patient.aspx</DependentUpon>
+    <Compile Include="MakeSchedule.aspx.designer.cs">
+      <DependentUpon>MakeSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppt.aspx.cs">
+      <DependentUpon>ViewAppt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAppt.aspx.designer.cs">
+      <DependentUpon>ViewAppt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
