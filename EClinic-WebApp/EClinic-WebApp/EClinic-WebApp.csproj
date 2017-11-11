@@ -163,6 +163,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MakeSchedule.aspx" />
+    <Content Include="PatientRegisteration.aspx" />
+    <Content Include="PatientSignIn.aspx" />
     <Content Include="ViewAppt.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -224,6 +226,20 @@
     </Compile>
     <Compile Include="MakeSchedule.aspx.designer.cs">
       <DependentUpon>MakeSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRegisteration.aspx.cs">
+      <DependentUpon>PatientRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientRegisteration.aspx.designer.cs">
+      <DependentUpon>PatientRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSignIn.aspx.cs">
+      <DependentUpon>PatientSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientSignIn.aspx.designer.cs">
+      <DependentUpon>PatientSignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewAppt.aspx.cs">
       <DependentUpon>ViewAppt.aspx</DependentUpon>
