@@ -157,6 +157,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Doctor-Profile.aspx" />
     <Content Include="DoctorMain.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -219,6 +220,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Doctor-Profile.aspx.cs">
+      <DependentUpon>Doctor-Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor-Profile.aspx.designer.cs">
+      <DependentUpon>Doctor-Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DoctorMain.aspx.cs">
       <DependentUpon>DoctorMain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
