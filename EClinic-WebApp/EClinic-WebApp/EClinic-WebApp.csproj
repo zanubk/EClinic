@@ -157,12 +157,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DoctorMain.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MakeSchedule.aspx" />
+    <Content Include="Manage_Patient_History.aspx" />
     <Content Include="Patient-Main.aspx" />
     <Content Include="ViewAppt.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -217,6 +219,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="DoctorMain.aspx.cs">
+      <DependentUpon>DoctorMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorMain.aspx.designer.cs">
+      <DependentUpon>DoctorMain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,6 +235,13 @@
     </Compile>
     <Compile Include="MakeSchedule.aspx.designer.cs">
       <DependentUpon>MakeSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Patient_History.aspx.cs">
+      <DependentUpon>Manage_Patient_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_Patient_History.aspx.designer.cs">
+      <DependentUpon>Manage_Patient_History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Patient-Main.aspx.cs">
       <DependentUpon>Patient-Main.aspx</DependentUpon>
