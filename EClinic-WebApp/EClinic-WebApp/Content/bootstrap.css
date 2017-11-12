@@ -164,7 +164,7 @@ button,
 input,
 select,
 textarea {
-  margin: 0 0 0 1px;
+  margin: 0 0 0 52px;
   font-family: inherit;
   font-size: 100%;
 }
@@ -787,7 +787,10 @@ pre code {
 
 .row {
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: 0px;
+    width: 901px;
+    height: 139px;
+    margin-top: 0px;
 }
 
 .row:before,
@@ -887,7 +890,10 @@ pre code {
 }
 
 .col-xs-3 {
-  width: 25%;
+  width: 28%;
+    top: -18px;
+    left: -30px;
+    height: 70px;
 }
 
 .col-xs-4 {
@@ -899,7 +905,10 @@ pre code {
 }
 
 .col-xs-6 {
-  width: 50%;
+  width: 54%;
+    top: 1px;
+    left: -130px;
+    height: 8px;
 }
 
 .col-xs-7 {
@@ -911,11 +920,17 @@ pre code {
 }
 
 .col-xs-9 {
-  width: 75%;
+  width: 79%;
+    top: -49px;
+    left: -18px;
+    height: 45px;
 }
 
 .col-xs-10 {
-  width: 83.33333333333334%;
+  width: 96%;
+    top: 4px;
+    left: -9px;
+    height: 133px;
 }
 
 .col-xs-11 {
@@ -923,7 +938,10 @@ pre code {
 }
 
 .col-xs-12 {
-  width: 100%;
+  width: 116%;
+    top: 0px;
+    left: 105px;
+    height: 216px;
 }
 
 @media (min-width: 768px) {
@@ -1755,6 +1773,10 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 15px;
+    width: 547px;
+    height: 41px;
+    margin-left: 5px;
+    margin-top: 0px;
 }
 
 .radio,
@@ -1820,7 +1842,7 @@ fieldset[disabled] .checkbox-inline {
 }
 
 .input-sm {
-  height: 30px;
+  height: 35px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -2094,6 +2116,9 @@ fieldset[disabled] .btn-default.active {
   color: #ffffff;
   background-color: #428bca;
   border-color: #357ebd;
+    width: 277px;
+    height: 27px;
+    margin-left: 0px;
 }
 
 .btn-primary:hover,
@@ -2366,7 +2391,8 @@ fieldset[disabled] .btn-link:focus {
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
-  width: 100%;
+  width: 26%;
+    height: 44px;
 }
 
 .fade {

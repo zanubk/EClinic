@@ -13,42 +13,46 @@
          </script>
        <asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="495px" CssClass="panel" Style="margin-top: 105px; margin-left: 264px;" Font-Size="Large" Width="722px">
            <br />
-          <asp:Label ID="Label1" runat="server" Text="Patient Registeration" Font-Italic="True" CssClass="Title"></asp:Label>
+          <asp:Label ID="Label1" runat="server" Text="Patient Registeration" Font-Italic="True" style="padding-left:20px; padding-top:60px;"></asp:Label>
       
        <script type="text/javascript" src="http://www.clubdesign.at/floatlabels.js"></script>
 
-<div class="container" style="padding-left:170px; padding-top:60px;">
+<div class="container" style="padding-left:100px; padding-top:60px;">
+          
 
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm floatlabel" placeholder="First Name">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
-			    					</div>
-			    				</div>
-			    			    &nbsp;
-			    			</div>
 
-			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-			    			</div>
 
-			    			<div class="row">
-			    				<div class="col-xs-3 col-sm-3 col-md-3">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-			    					</div>
-			    				</div>
-			    			</div>
+
+
+                                         
+                                   <div class="row">
+			    					<div class="col-xs-3 col-sm-3 col-md-3">
+			    					<div class="form-group"> &nbsp;&nbsp;&nbsp;&nbsp;
+			                          
+                                        <input id="last_name" class="form-control input-sm" name="last_name0" placeholder="Last Name" type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+			    			        <div class="col-xs-9 col-sm-9 col-md-9">
+			    					<div class="form-group"> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="last_name" class="form-control input-sm" name="last_name0" placeholder="Last Name" type="text"></div></div>
+
+
+                                    </div>
+
+      <div class="row">
+			    					<div class="col-xs-3 col-sm-3 col-md-3">
+			    					<div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;
+			                          
+                                        <input id="last_name" class="form-control input-sm" name="last_name0" placeholder="Last Name" type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+			    			        <div class="col-xs-9 col-sm-9 col-md-9">
+			    					<div class="form-group"> &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input id="last_name" class="form-control input-sm" name="last_name0" placeholder="Last Name" type="text"></div></div>
+
+
+                                    </div>
+
+
+
+        			
+
 			    			
 			    			<input type="submit" value="Register" class="btn btn-info btn-block">
        
