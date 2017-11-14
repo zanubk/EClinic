@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EClinic_WebApp.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DoctorSite1.master.cs" Inherits="EClinic_WebApp.DoctorSite1" %>
 
 <!DOCTYPE html>
 
@@ -50,37 +50,42 @@
         <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
+
                 <li>
-                  <a href="Patient-Main.aspx">
+                  <a href="DoctorMain.aspx">
                   <i class="glyphicon glyphicon-home"></i> Home
                   </a>
                 </li>
-                 <li>
-                  <a href="MakeAppointment.aspx">
-                  <i class="fa fa-dashboard fa-lg"></i> Make Appointment
+                <li>
+                  <a href="ViewAppt.aspx">
+                  <i class="fa fa-dashboard fa-lg"></i> View Appointments
                   </a>
                 </li>
                  
-          
+            <li>
+                  <a href="MakeSchedule.aspx">
+                  <i class="fa fa-dashboard fa-lg"></i> Make Schedule
+                  </a>
+                </li>
 
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> My Appointment <span class="arrow"></span></a>
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> My Schedules <span class="arrow"></span></a>
                 </li>  
                 <ul class="sub-menu collapse" id="service">
-                  <li> <a href="ViewAppt.aspx">View Appointments</a></li>
-                  
+                  <li> <a href="ViewSchedule.aspx">View Schedules</a></li>
+                 
                  
                 </ul>
 
-
                  <li>
                   <a href="Manage_Patient_History.aspx">
-                  <i class="glyphicon glyphicon-log-out"></i> My Medical History
+                  <i class="glyphicon glyphicon-log-out"></i> Edit Medical History
                   </a>
                 </li>
 
+
                  <li>
-                  <a href="Registeration.aspx">
+                  <a href="Doctor-Profile.aspx">
                   <i class="fa fa-user fa-lg"></i> Profile
                   </a>
                   </li>

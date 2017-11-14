@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Doctor-Profile.aspx.cs" Inherits="EClinic_WebApp.Doctor_Profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DoctorSite1.Master" AutoEventWireup="true" CodeBehind="Doctor-Profile.aspx.cs" Inherits="EClinic_WebApp.Doctor_Profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
       <style>
         .Title { margin-left:480px;  }
@@ -24,11 +24,10 @@
 
     &nbsp;<asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="495px" CssClass="panel" style="margin-top: 105px; margin-left: 195px;" Font-Size="Large" Width="790px" ScrollBars="Auto">
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label2" runat="server" Text="My Profile"></asp:Label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="My Profile"></asp:Label>
           <br />
           <br />
-       
+       <div class="container" style="padding-top:1em; margin-left:-100px; ">
          <div class="row" style="margin-left:5em;">
         <div class="col-sm-6">
         <div class="input-group">
@@ -62,45 +61,43 @@
        
          <div class="row" style="margin-left:5em; ">
         <div class="col-sm-6">
-        <div class="input-group" style="margin-top:-80px; ">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
-            </div>
+         <div class="form-group" style=" " >
+     
+      <select class="form-control" id="sel1"  style="width:280px; margin-top:80px;">
+        <option>Male</option>
+        <option>Female</option>
+      
+      </select>
+     
+       
+    </div>
             </div>
 
         
                  <div class="col-sm-6">
    
+                   <div class="input-group" >
+   
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-             
-            <div class="form-group" style="margin-top:-80px; ">
-      
+     <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
+           
+            </div>
 
-        <select class="form-control" id="gender1" style="width:230px;">
-          <option>Male</option>
-          <option>Female</option>
-        </select>          
-          
-        </div>
-</div> 
+            
+            
+      
+ 
+                     </div>
             </div>
 
         <div class="row" style="margin-left:5em; ">
         <div class="col-sm-6">
-        <div class="input-group" style="margin-top:-90px; ">
+        <div class="input-group" >
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
@@ -115,7 +112,7 @@
 
         
                  <div class="col-sm-6">
-           <div class="input-group"  style="margin-top:-90px; ">
+           <div class="input-group"  >
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
@@ -131,7 +128,7 @@
 
              <div class="row" style="margin-left:5em; ">
         <div class="col-sm-6">
-        <div class="input-group" style="margin-top:-80px; ">
+        <div class="input-group">
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
@@ -147,17 +144,21 @@
 
                 <div class="row" style="margin-left:5em; ">
         <div class="col-sm-6">
-        <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-        
-             <label for="usr">Skills:</label>
+       <div class="form-group" style=" margin-top:80px; ">
+  <label for="comment" style="margin-left:2em;">Skills:</label>
   <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
+</div>
             </div>
                  </div>
-        
+
+           </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                    <asp:Button ID="Button1" runat="server" Text="Update" BackColor="Black" CssClass="btn" ForeColor="White" Width="118px"/>
+    
+          
            </asp:Panel>
 
 </asp:Content>

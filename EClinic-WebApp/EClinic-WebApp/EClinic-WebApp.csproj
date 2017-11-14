@@ -163,10 +163,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="DoctorSite1.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="MakeAppointment.aspx" />
+    <Content Include="MakeAppointment2.aspx" />
     <Content Include="MakeSchedule.aspx" />
     <Content Include="Manage_Patient_History.aspx" />
     <Content Include="Patient-Main.aspx" />
+    <Content Include="Registeration.aspx" />
+    <Content Include="SignIn.aspx" />
     <Content Include="ViewAppt.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -199,7 +204,6 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Site.Master" />
     <Content Include="ViewSchedule.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -208,6 +212,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -222,7 +227,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Doctor-Profile.aspx.cs">
       <DependentUpon>Doctor-Profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Doctor-Profile.aspx.designer.cs">
       <DependentUpon>Doctor-Profile.aspx</DependentUpon>
@@ -234,8 +238,29 @@
     <Compile Include="DoctorMain.aspx.designer.cs">
       <DependentUpon>DoctorMain.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DoctorSite1.Master.cs">
+      <DependentUpon>DoctorSite1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorSite1.Master.designer.cs">
+      <DependentUpon>DoctorSite1.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MakeAppointment.aspx.cs">
+      <DependentUpon>MakeAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeAppointment.aspx.designer.cs">
+      <DependentUpon>MakeAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeAppointment2.aspx.cs">
+      <DependentUpon>MakeAppointment2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeAppointment2.aspx.designer.cs">
+      <DependentUpon>MakeAppointment2.aspx</DependentUpon>
     </Compile>
     <Compile Include="MakeSchedule.aspx.cs">
       <DependentUpon>MakeSchedule.aspx</DependentUpon>
@@ -258,6 +283,27 @@
     <Compile Include="Patient-Main.aspx.designer.cs">
       <DependentUpon>Patient-Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registeration.aspx.cs">
+      <DependentUpon>Registeration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registeration.aspx.designer.cs">
+      <DependentUpon>Registeration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="ViewAppt.aspx.cs">
       <DependentUpon>ViewAppt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,13 +313,6 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

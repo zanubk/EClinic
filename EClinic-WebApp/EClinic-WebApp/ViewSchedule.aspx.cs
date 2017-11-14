@@ -11,6 +11,12 @@ namespace EClinic_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Table1.Rows[0].Cells[3].Visible = false;
+            Table1.Rows[1].Cells[3].Visible = false;
+            Table1.Rows[2].Cells[3].Visible = false;
+            Table1.Rows[3].Cells[3].Visible = false;
+
+
 
         }
     }
