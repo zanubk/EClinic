@@ -164,7 +164,7 @@ button,
 input,
 select,
 textarea {
-  margin: 0 0 0 1px;
+  margin: 0 0 0 141px;
   font-family: inherit;
   font-size: 100%;
 }
@@ -1720,7 +1720,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
@@ -3639,6 +3638,9 @@ input[type="button"].btn-block {
   position: relative;
   display: table;
   border-collapse: separate;
+    top: 3px;
+    left: 93px;
+    width: 402px;
 }
 
 .input-group.col {

@@ -48,6 +48,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\BookShop\BookShop\bin\MySql.Data.DLL</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -227,6 +230,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Doctor-Profile.aspx.cs">
       <DependentUpon>Doctor-Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Doctor-Profile.aspx.designer.cs">
       <DependentUpon>Doctor-Profile.aspx</DependentUpon>
@@ -276,6 +280,12 @@
     <Compile Include="Manage_Patient_History.aspx.designer.cs">
       <DependentUpon>Manage_Patient_History.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Schedule.cs" />
     <Compile Include="Patient-Main.aspx.cs">
       <DependentUpon>Patient-Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,6 +293,7 @@
     <Compile Include="Patient-Main.aspx.designer.cs">
       <DependentUpon>Patient-Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presenters\PresenterSignIn.cs" />
     <Compile Include="Registeration.aspx.cs">
       <DependentUpon>Registeration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -335,10 +346,10 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\ISignIn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

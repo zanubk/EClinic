@@ -262,3 +262,4 @@ C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic-WebApp\EClinic-WebApp\bin\Mic
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.csprojResolveAssemblyReference.cache
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.dll
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.pdb
+C:\Users\Samman\Downloads\Proep\EClinic\EClinic-WebApp\EClinic-WebApp\bin\MySql.Data.DLL
