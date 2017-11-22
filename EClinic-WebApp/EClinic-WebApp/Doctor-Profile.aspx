@@ -28,8 +28,8 @@
           <br />
           <br />
        <div class="container" style="padding-top:1em; margin-left:-100px; ">
-         <div class="row" style="margin-left:5em;">
-        <div class="col-sm-6">
+         <div class="row" >
+        <div class="col-sm-6" style="margin-left:-100px;">
         <div class="input-group">
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -43,7 +43,7 @@
             </div>
             </div>
 
-         <div class="col-sm-6">
+         <div class="col-sm-6" style="margin-left:-50px;">
            <div class="input-group">
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,22 +59,22 @@
   </div>
            
        
-         <div class="row" style="margin-left:5em; ">
-        <div class="col-sm-6">
-         <div class="form-group" style=" " >
+         <div class="row" >
+        <div class="col-sm-6" runat="server" style="margin-left:-10px; margin-top:110px;">
+        
      
-      <select class="form-control" id="sel1"  style="width:280px; margin-top:80px;">
-        <option>Male</option>
-        <option>Female</option>
+      <select  class="form-control" id="sel1" runat="server" style="width:280px; ">
+        <option value="Male">Male</option>
+        <option value ="Female">Female</option>
       
       </select>
      
        
-    </div>
+    
             </div>
 
         
-                 <div class="col-sm-6">
+                 <div class="col-sm-6" runat="server" style="margin-left:-140px;">
    
                    <div class="input-group" >
    
@@ -84,7 +84,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
+     <input id="email" type="email" class="form-control" runat="server" placeholder="Email">
            
             </div>
 
@@ -95,8 +95,8 @@
                      </div>
             </div>
 
-        <div class="row" style="margin-left:5em; ">
-        <div class="col-sm-6">
+        <div class="row" >
+        <div class="col-sm-6" style="margin-left:-100px;">
         <div class="input-group" >
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -111,7 +111,7 @@
             </div>
 
         
-                 <div class="col-sm-6">
+                 <div class="col-sm-6" style="margin-left:-50px;">
            <div class="input-group"  >
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -126,8 +126,8 @@
             </div> 
             </div>
 
-             <div class="row" style="margin-left:5em; ">
-        <div class="col-sm-6">
+             <div class="row">
+        <div class="col-sm-6" style="margin-left:-100px;">
         <div class="input-group">
    
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

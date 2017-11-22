@@ -43,7 +43,7 @@
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   <li style="float:right;  margin-top:-40px;margin-right:50px; padding-left:10px; "  > 
                   
-                  <span class="glyphicon glyphicon-user"></span> Username
+                  <span class="glyphicon glyphicon-user"></span> <%=UID%>
                   
                 </li>
 

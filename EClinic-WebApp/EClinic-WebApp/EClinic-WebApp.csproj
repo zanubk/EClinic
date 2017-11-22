@@ -173,6 +173,7 @@
     <Content Include="MakeSchedule.aspx" />
     <Content Include="Manage_Patient_History.aspx" />
     <Content Include="Patient-Main.aspx" />
+    <Content Include="PatientProfile.aspx" />
     <Content Include="Registeration.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="ViewAppt.aspx" />
@@ -293,7 +294,14 @@
     <Compile Include="Patient-Main.aspx.designer.cs">
       <DependentUpon>Patient-Main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presenters\PresenterSignIn.cs" />
+    <Compile Include="PatientProfile.aspx.cs">
+      <DependentUpon>PatientProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientProfile.aspx.designer.cs">
+      <DependentUpon>PatientProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Registeration.aspx.cs">
       <DependentUpon>Registeration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -346,6 +354,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\IRegister.cs" />
     <Compile Include="Views\ISignIn.cs" />
   </ItemGroup>
   <ItemGroup>

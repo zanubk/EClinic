@@ -15,7 +15,7 @@ namespace EClinic_WebApp
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
-
+        public string UID;
         protected void Page_Init(object sender, EventArgs e)
         {
             // The code below helps to protect against XSRF attacks
@@ -69,6 +69,7 @@ namespace EClinic_WebApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            UID = Application["ID"].ToString();
 
         }
 

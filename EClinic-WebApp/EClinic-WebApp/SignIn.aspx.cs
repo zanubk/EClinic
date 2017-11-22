@@ -37,16 +37,28 @@ namespace EClinic_WebApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session.Abandon();
+            Session.Clear();
 
         }
 
         protected void Button1_OnClick(object Source, EventArgs e)
         {
-            PresenterSignIn pSign = new PresenterSignIn(this);
-            if (pSign.LogIn())
+            Presenter pSign = new Presenter(this);
+            string role = pSign.LogIn();
+            if (role == "Doctor")
             {
                 /// Doctor is Logged In
+                /// 
+                Application["ID"] = GetUserName;
                 Response.Redirect("DoctorMain.aspx");
+            }
+            if (role == "Patient")
+            {
+                /// Patient is Logged In
+                /// 
+                Application["ID"] = GetUserName;
+                Response.Redirect("Patient-Main.aspx");
             }
 
         }

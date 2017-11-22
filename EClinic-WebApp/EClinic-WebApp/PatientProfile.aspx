@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registeration.aspx.cs" Inherits="EClinic_WebApp.Registeration" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatientProfile.aspx.cs" Inherits="EClinic_WebApp.PatientProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
       <style>
         .Title { margin-left:430px;  }
@@ -22,98 +22,41 @@
         })
     </script>
 
-    &nbsp;<asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="695px" CssClass="panel" style="margin-top: 105px; margin-left: 195px;" Font-Size="Large" Width="790px" ScrollBars="Auto">
+    &nbsp;<asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="495px" CssClass="panel" style="margin-top: 105px; margin-left: 195px;" Font-Size="Large" Width="790px" ScrollBars="Auto">
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="Registeration Form"></asp:Label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="Profile"></asp:Label>
           <br />
           <br />
-       <div class="container" style="padding-top:1em; margin-left:-100px; ">
+       <div class="container" style="padding-top:1em; margin-left:-50px; ">
          <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-100px;">
-        <div class="input-group">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" runat="server" placeholder="FirstName">
-            </div>
-            </div>
-
-         <div class="col-sm-6" runat="server" style="margin-left:-50px;">
-           <div class="input-group">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="lname" type="text" class="form-control" runat="server" placeholder="LastName">
-            </div>
-            </div>
-  </div>
-           
-           <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-100px;">
-        <div class="input-group">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="password" type="password" class="form-control" runat="server" placeholder="Password">
-            </div>
-            </div>
-
-         <div class="col-sm-6" runat="server" style="margin-left:-50px;">
-           <div class="input-group">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="cpassword" type="password" class="form-control" runat="server" placeholder="Confirm Password">
-            </div>
-            </div>
-  </div>
-       
-         <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-10px; margin-top:110px;">
-        
-     
-      <select  class="form-control" id="sel1" runat="server" style="width:280px; ">
-        <option value="Male">Male</option>
-        <option value ="Female">Female</option>
-      
-      </select>
-     
-       
     
+        <div class="input-group">
+       <label for="email">First Name:</label>
+           
+   
+    <input id="fname" type="text" class="form-control" style="margin-top:-60px;" runat="server" placeholder="FirstName">
+            </div>
             </div>
 
+         <div class="row" >
+           <div class="input-group">
+             <label for="email">Last Name:</label>
+           
+   
+    <input id="lname" type="text" class="form-control" style="margin-top:-60px;" runat="server" placeholder="LastName">
+            </div>
+            </div>
+  
+           
+           
+       
+     
+
         
-                 <div class="col-sm-6" runat="server" style="margin-left:-140px;">
-   
+              <div class="row" >
                    <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <input id="email" type="email" class="form-control" runat="server" placeholder="Email">
+    <label for="email">Email address:</label>
+         <input id="email" type="email" class="form-control" style="margin-top:-60px;" runat="server" placeholder="Email">
            
             </div>
 
@@ -122,58 +65,50 @@
       
  
                      </div>
-            </div>
+          
 
         <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-100px;">
-        <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="phone" type="text" class="form-control" runat="server" placeholder="Contact Number">
+            <div class="input-group" >
+    <label for="email">Contact #:</label>
+         
+    <input id="phone" type="text" class="form-control" runat="server" style="margin-top:-60px;" placeholder="Contact Number">
             </div>
             </div>
 
         
-                 <div class="col-sm-6" runat="server" style="margin-left:-50px;">
-           <div class="input-group"  >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="address" type="text" class="form-control" runat="server" placeholder="Address">
+                  <div class="row" >
+                          <div class="input-group"  >
+    <label for="email">Address:</label>
+           
+    <input id="address" type="text" class="form-control" runat="server" style="margin-top:-60px;" placeholder="Address">
             </div>
             </div> 
-            </div>
+           
 
              
         <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-100px;">
-        <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="dob" type="text" class="form-control" runat="server" placeholder="Date Of Birth">
+       <div class="input-group" >
+    <label for="email">Date Of Birth:</label>
+           
+    <input id="dob" type="text" class="form-control" runat="server" style="margin-top:-60px;" placeholder="Date Of Birth">
             </div>
             </div>
 
+            <div class="row" style="margin-left:75px">
+     
         
-                  
+      <label for="email">Gender:</label>
+      <select  class="form-control" id="sel1" runat="server" style="margin-top:-30px; width:280px; ">
+        <option value="Male">Male</option>
+        <option value ="Female">Female</option>
+      
+      </select>
+     
+       
+    
             </div>
+                  
+         
 
                 <div class="row" style="margin-left:4em; ">
         <div class="col-sm-6">
@@ -248,7 +183,7 @@
         <div class="col-sm-6" runat="server">
        <div class="form-group" style="margin-left:2em; margin-top:80px; ">
   <label for="comment" style="margin-left:5em;">Drugs:</label>
-  <textarea class="form-control" rows="5" id="drug" runat="server"></textarea>
+  <textarea class="form-control" style="margin-top:2em;  margin-left:5em;" rows="5" id="drug" runat="server"></textarea>
 </div>
             </div>
                  </div>
@@ -257,11 +192,13 @@
       
            </div>
         
+           
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    <asp:Button ID="Button1" runat="server" Text="Make" OnClick="Button1_OnClick" BackColor="Black" CssClass="btn" ForeColor="White" Width="118px"/>
+      
+                      <asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_OnClick" BackColor="Black" CssClass="btn" ForeColor="White" Width="118px"/>
     
            </asp:Panel>
 

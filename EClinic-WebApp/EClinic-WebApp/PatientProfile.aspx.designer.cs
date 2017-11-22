@@ -10,7 +10,7 @@
 namespace EClinic_WebApp {
     
     
-    public partial class Registeration {
+    public partial class PatientProfile {
         
         /// <summary>
         /// Panel1 control.
@@ -49,33 +49,6 @@ namespace EClinic_WebApp {
         protected global::System.Web.UI.HtmlControls.HtmlInputText lname;
         
         /// <summary>
-        /// password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
-        
-        /// <summary>
-        /// cpassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword cpassword;
-        
-        /// <summary>
-        /// sel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect sel1;
-        
-        /// <summary>
         /// email control.
         /// </summary>
         /// <remarks>
@@ -110,6 +83,15 @@ namespace EClinic_WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText dob;
+        
+        /// <summary>
+        /// sel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect sel1;
         
         /// <summary>
         /// Table1 control.

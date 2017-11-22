@@ -9,9 +9,8 @@ using EClinic_WebApp.Views;
 
 namespace EClinic_WebApp
 {
-    public partial class Registeration : System.Web.UI.Page, IRegister
+    public partial class PatientProfile : System.Web.UI.Page, IRegister
     {
-
         List<CheckBox> checkboxes;
         public string Address
         {
@@ -149,11 +148,11 @@ namespace EClinic_WebApp
         {
             get
             {
-                return password.Value;
+                return "";
             }
             set
             {
-                password.Value = value;
+                //password.Value = value;
             }
         }
 
@@ -168,31 +167,37 @@ namespace EClinic_WebApp
                 phone.Value = value;
             }
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (!IsPostBack)
+            {
+                Session["FamilyDiseases"] = ""; Session["Diseases"] = "";
                 checkboxes = new List<CheckBox>() { Heart1, Heart2, Diabetes1, Diabetes2, Asthma1, Asthma2 };
-               foreach(CheckBox chk in checkboxes)
+                Presenter prs = new Presenter(this);
+                prs.PatientProfile(Application["ID"].ToString());
+                string[] diseases = Diseases.Split(';');
+                string[] Fdiseases = FaimilyDiseases.Split(';');
+                foreach (CheckBox chk in checkboxes)
                 {
-                    if(chk.Checked && chk.ID[chk.ID.Length-1]=='1')
-                    { Session["Diseases"] = chk.ID.Split('1')[0] + ";"; }
-                    if (chk.Checked && chk.ID[chk.ID.Length - 1] == '2')
-                    { Session["FamilyDiseases"] = chk.ID.Split('2')[0] + ";"; }
+                    if (diseases.Contains(chk.ID.Substring(0, chk.ID.Length - 1)) && chk.ID[chk.ID.Length - 1] == '1')
+                    {
+                        chk.Checked = true;
+                    }
 
+                    if (Fdiseases.Contains(chk.ID.Substring(0, chk.ID.Length - 1)) && chk.ID[chk.ID.Length - 1] == '2')
+                    {
+                        chk.Checked = true;
+                    }
                 }
-
-            
+            }
 
         }
         protected void Button1_OnClick(object Source, EventArgs e)
         {
             Presenter prs = new Presenter(this);
-            bool status = prs.Register();
-            if(status)
-            {
-                Response.Redirect("SignIn.aspx");
-            }
+           // List<string> info = prs.PatientProfile(Application["ID"].ToString());
+           // List<string> get = info
         }
-      
     }
 }
