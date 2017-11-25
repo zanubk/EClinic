@@ -11,6 +11,7 @@ namespace EClinic_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            fname.Value = "Good";
 
         }
     }

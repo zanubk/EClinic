@@ -27,43 +27,78 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="My Profile"></asp:Label>
           <br />
           <br />
-       <div class="container" style="padding-top:1em; margin-left:-100px; ">
+      <div class="container" style="padding-top:1em; margin-left:-50px; ">
          <div class="row" >
-        <div class="col-sm-6" style="margin-left:-100px;">
+    
         <div class="input-group">
+       <label for="email">First Name:</label>
+           
    
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
+    <input id="fname" type="text" class="form-control" disabled="disabled" style="margin-top:-60px;" runat="server" placeholder="FirstName">
             </div>
             </div>
 
-         <div class="col-sm-6" style="margin-left:-50px;">
+         <div class="row" >
            <div class="input-group">
+             <label for="email">Last Name:</label>
+           
    
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
+    <input id="lname" type="text" class="form-control" disabled="disabled" style="margin-top:-60px;" runat="server" placeholder="LastName">
             </div>
             </div>
-  </div>
+  
+           
            
        
-         <div class="row" >
-        <div class="col-sm-6" runat="server" style="margin-left:-10px; margin-top:110px;">
-        
      
-      <select  class="form-control" id="sel1" runat="server" style="width:280px; ">
+
+        
+              <div class="row" >
+                   <div class="input-group" >
+    <label for="email">Email address:</label>
+         <input id="email" type="email" class="form-control" disabled="disabled" style="margin-top:-60px;" runat="server" placeholder="Email">
+           
+            </div>
+
+            
+            
+      
+ 
+                     </div>
+          
+
+        <div class="row" >
+            <div class="input-group" >
+    <label for="email">Contact #:</label>
+         
+    <input id="phone" type="text" class="form-control" disabled="disabled" runat="server" style="margin-top:-60px;" placeholder="Contact Number">
+            </div>
+            </div>
+
+        
+                  <div class="row" >
+                          <div class="input-group"  >
+    <label for="email">Address:</label>
+           
+    <input id="address" type="text" class="form-control" disabled="disabled" runat="server" style="margin-top:-60px;" placeholder="Address">
+            </div>
+            </div> 
+           
+
+             
+        <div class="row" >
+       <div class="input-group" >
+    <label for="email">Date Of Birth:</label>
+           
+    <input id="dob" type="text" class="form-control" disabled="disabled" runat="server" style="margin-top:-60px;" placeholder="Date Of Birth">
+            </div>
+            </div>
+
+            <div class="row" style="margin-left:75px">
+     
+        
+      <label for="email">Gender:</label>
+      <select  class="form-control" id="sel1" runat="server" disabled="disabled" style="margin-top:-30px; width:280px; ">
         <option value="Male">Male</option>
         <option value ="Female">Female</option>
       
@@ -73,83 +108,14 @@
     
             </div>
 
-        
-                 <div class="col-sm-6" runat="server" style="margin-left:-140px;">
-   
-                   <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <input id="email" type="email" class="form-control" runat="server" placeholder="Email">
-           
-            </div>
-
-            
-            
-      
- 
-                     </div>
-            </div>
-
-        <div class="row" >
-        <div class="col-sm-6" style="margin-left:-100px;">
-        <div class="input-group" >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
-            </div>
-            </div>
-
-        
-                 <div class="col-sm-6" style="margin-left:-50px;">
-           <div class="input-group"  >
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
-            </div>
-            </div> 
-            </div>
-
-             <div class="row">
-        <div class="col-sm-6" style="margin-left:-100px;">
-        <div class="input-group">
-   
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    <input id="fname" type="text" class="form-control" name="email" placeholder="FirstName">
-            </div>
-            </div>
-                 </div>
-
-                <div class="row" style="margin-left:5em; ">
-        <div class="col-sm-6">
-       <div class="form-group" style=" margin-top:80px; ">
-  <label for="comment" style="margin-left:2em;">Skills:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
+                 <div class="row" >
+       
+       <div class="input-group" style="margin-top:20px;">
+  <label for="comment" >Skills:</label>
+  <textarea class="form-control" id="skills" runat="server" disabled="disabled"  style="margin-top:-30px; width:290px;" rows="5" ></textarea>
 </div>
             </div>
-                 </div>
+              
 
            </div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
