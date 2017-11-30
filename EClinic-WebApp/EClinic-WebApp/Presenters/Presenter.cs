@@ -31,9 +31,9 @@ namespace EClinic_WebApp.Presenters
         }
 
 
-        public bool Register()
+        public string Register()
         {         
-            bool status = db.Register(IRegister.Fname, IRegister.Lname, IRegister.Password, IRegister.Gender, IRegister.Email, IRegister.PhoneNumber, IRegister.Address, 
+            string status = db.Register(IRegister.Fname, IRegister.Lname, IRegister.Password, IRegister.Gender, IRegister.Email, IRegister.PhoneNumber, IRegister.Address, 
                                     IRegister.Dob, IRegister.Allergies, IRegister.Medicines,
                                     IRegister.Drugs,IRegister.Diseases,IRegister.FaimilyDiseases);
             return status;
@@ -70,6 +70,12 @@ namespace EClinic_WebApp.Presenters
             IDoctorProfile.PhoneNumber = info[6];
             IDoctorProfile.Email = info[7];
             IDoctorProfile.Address = info[8];
+        }
+        public void UpdatePatientProfile(string id)
+        {
+            db.UpdatePatientPrfile(id, IRegister.Fname, IRegister.Lname, IRegister.Gender, IRegister.Email, IRegister.PhoneNumber, IRegister.Address, IRegister.Dob, IRegister.Diseases, IRegister.FaimilyDiseases, IRegister.Drugs, IRegister.Medicines, IRegister.Allergies);
+
+
         }
 
     }

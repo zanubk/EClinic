@@ -1,32 +1,29 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registeration.aspx.cs" Inherits="EClinic_WebApp.Registeration" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-      <style>
-        .Title { margin-left:430px;  }
-      
-		 .Table { padding-left:40px; margin-left:30px;  padding-right:30px;}
-         
-       
-    </style>
-    <script language="javascript">
-        $(function () {
-            console.log('ready');
+﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeBehind="Registeration.aspx.cs" Inherits="EClinic_WebApp.Registeration" %>
 
-            $('.list-group li').click(function (e) {
-                e.preventDefault()
+<!DOCTYPE html>
 
-                $that = $(this);
-               
-                $that.parent().find('li').removeClass('active');
-                $that.addClass('active');
-            });
-        })
-    </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <webopt:bundlereference runat="server" path="~/Content/css" />
+</head>
+<body style="background-color:#00ccff;">
+    <form id="form1" runat="server">
+       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    &nbsp;<asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="695px" CssClass="panel" style="margin-top: 105px; margin-left: 195px;" Font-Size="Large" Width="790px" ScrollBars="Auto">
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Text="Registeration Form"></asp:Label>
+        <div>
+               <div class="nav-side-menu">
+    <div class="brand">EClinic</div>
+    
+</div>
+              <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Label ID="Label2" runat="server" Text="Registeration Form" Font-Size="XX-Large"></asp:Label>
           <br />
           <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:Panel ID="Panel1" runat="server" BackColor="#CCF5FF" Height="695px" CssClass="panel" style="margin-top: 105px; margin-left: 295px;" Font-Size="Large" Width="790px" ScrollBars="Auto">
+        
        <div class="container" style="padding-top:1em; margin-left:-100px; ">
          <div class="row" >
         <div class="col-sm-6" runat="server" style="margin-left:-100px;">
@@ -175,7 +172,7 @@
                   
             </div>
 
-                <div class="row" style="margin-left:4em; ">
+                <div class="row" style="margin-left:6em; ">
         <div class="col-sm-6">
                    <div class="form-group" style=" margin-top:80px; ">
   <label for="comment" style="margin-left:2em;">Former Diseases:</label>
@@ -248,7 +245,7 @@
         <div class="col-sm-6" runat="server">
        <div class="form-group" style="margin-left:2em; margin-top:80px; ">
   <label for="comment" style="margin-left:5em;">Drugs:</label>
-  <textarea class="form-control" rows="5" id="drug" runat="server"></textarea>
+ <textarea class="form-control" style="margin-top:2em;  margin-left:5em;" rows="5" id="drug" runat="server"></textarea>
 </div>
             </div>
                  </div>
@@ -264,5 +261,11 @@
                     <asp:Button ID="Button1" runat="server" Text="Make" OnClick="Button1_OnClick" BackColor="Black" CssClass="btn" ForeColor="White" Width="118px"/>
     
            </asp:Panel>
+   
+       
+         
 
-</asp:Content>
+    </div>
+    </form>
+</body>
+</html>

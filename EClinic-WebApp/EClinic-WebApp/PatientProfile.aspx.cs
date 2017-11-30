@@ -196,8 +196,9 @@ namespace EClinic_WebApp
         protected void Button1_OnClick(object Source, EventArgs e)
         {
             Presenter prs = new Presenter(this);
-           // List<string> info = prs.PatientProfile(Application["ID"].ToString());
-           // List<string> get = info
+            prs.UpdatePatientProfile(Application["ID"].ToString());
+            alert.Style["visibility"] = "visible";
+            //alert.Visible = true;
         }
     }
 }

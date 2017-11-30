@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using EClinic_WebApp.Presenters;
 using EClinic_WebApp.Views;
+using System.Net.Mail;
+using System.Net;
 
 namespace EClinic_WebApp
 {
@@ -180,19 +182,52 @@ namespace EClinic_WebApp
                     { Session["FamilyDiseases"] = chk.ID.Split('2')[0] + ";"; }
 
                 }
+               if(Session["Diseases"]==null )
+            {
+                Session["Diseases"] = "";
+            }
+            if (Session["FamilyDiseases"] == null)
+            {
+                Session["FamilyDiseases"] = "";
+            }
 
-            
 
         }
         protected void Button1_OnClick(object Source, EventArgs e)
         {
-            Presenter prs = new Presenter(this);
-            bool status = prs.Register();
-            if(status)
+           Presenter prs = new Presenter(this);
+           string status = prs.Register();
+            
+            if (status != null)
             {
-                Response.Redirect("SignIn.aspx");
+                MailMessage message = new MailMessage();
+                SmtpClient smtpClient = new SmtpClient();
+             
+                try
+                {
+                    MailAddress fromAddress = new MailAddress("zanub.khan4468@gmail.com");
+                    message.From = fromAddress;
+                    message.To.Add("z.khan@student.fontys.nl");
+
+                    message.Subject = "EClinic User ID";
+                    message.IsBodyHtml = true;
+                    message.Body = "<html><body><h1> Receive Your User ID</h1><p> Your User Id :  " + status+"</p></body></html>";
+                    smtpClient.Host = "smtp.gmail.com";   // We  use gmail as our smtp client
+                    smtpClient.Port = 587;
+                    smtpClient.EnableSsl = true;
+                    smtpClient.UseDefaultCredentials = true;
+                    smtpClient.Credentials = new System.Net.NetworkCredential("zanub.khan4468@gmail.com", ",marwa004");
+
+                    smtpClient.Send(message);
+
+                }
+                catch (Exception ex)
+                {
+                    msg = ex.Message;
+                }
             }
+          
         }
-      
+
     }
 }

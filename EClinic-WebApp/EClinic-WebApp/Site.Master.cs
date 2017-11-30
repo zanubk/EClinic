@@ -69,7 +69,8 @@ namespace EClinic_WebApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            UID = Application["ID"].ToString();
+            if (Application["ID"] != null)
+            { UID = Application["ID"].ToString(); }
 
         }
 
