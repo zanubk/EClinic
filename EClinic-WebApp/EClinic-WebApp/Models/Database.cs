@@ -124,6 +124,42 @@ namespace EClinic_WebApp.Models
 
         }
 
-          
+        public List<string> ViewDoctortProfile(string doctorId)
+        {
+            var ListOfProfileItemsToBeShown = new List<string>();
+            MySqlCommand cmd = sql.CreateCommand();
+            cmd.CommandText = "SELECT person.ID, person.FName,person.LName,person.Gender,person.DOB,doctor.skills,contact.phone,contact.email,contact.address FROM person Inner JOIN doctor ON person.ID = doctor.ID Inner JOIN contact on doctor.ID=contact.ID where person.Role = 'Doctor' and person.Id='" + doctorId + "'; ";
+
+            if (sql.State != System.Data.ConnectionState.Open)
+            { sql.Open(); }
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+
+            if (reader.HasRows)
+            {
+                reader.Read();
+
+
+                for (int i = 0; i <= reader.FieldCount - 1; i++)
+                {
+                    if (reader.IsDBNull(i))
+                    { ListOfProfileItemsToBeShown.Add(""); }
+                    else
+                    { ListOfProfileItemsToBeShown.Add(reader.GetString(i)); }
+                }
+
+
+
+
+                sql.Close();
+                return ListOfProfileItemsToBeShown;
+            }
+            else
+                return null;
+
+        }
+
+
+
     }
 }

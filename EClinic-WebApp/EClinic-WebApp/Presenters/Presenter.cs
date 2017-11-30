@@ -11,6 +11,7 @@ namespace EClinic_WebApp.Presenters
     {
         public ISignIn iSignIn;
         public IRegister IRegister;
+        public IDoctorProfile IDoctorProfile;
         public Database db;
         public Presenter(ISignIn isignin)
         {
@@ -23,7 +24,13 @@ namespace EClinic_WebApp.Presenters
             db = new Database();
         }
 
-       
+        public Presenter(IDoctorProfile iview)
+        {
+            IDoctorProfile = iview;
+            db = new Database();
+        }
+
+
         public bool Register()
         {         
             bool status = db.Register(IRegister.Fname, IRegister.Lname, IRegister.Password, IRegister.Gender, IRegister.Email, IRegister.PhoneNumber, IRegister.Address, 
@@ -50,6 +57,19 @@ namespace EClinic_WebApp.Presenters
             IRegister.Email = info[11];
             IRegister.PhoneNumber = info[10];
             IRegister.Address = info[12];
+        }
+
+        public void DoctorProfile(string id)
+        {
+            List<string> info = db.ViewDoctortProfile(id);
+            IDoctorProfile.Fname = info[1];
+            IDoctorProfile.Lname = info[2];
+            IDoctorProfile.Gender = info[3];
+            IDoctorProfile.Dob = info[4];
+            IDoctorProfile.Skills = info[5];
+            IDoctorProfile.PhoneNumber = info[6];
+            IDoctorProfile.Email = info[7];
+            IDoctorProfile.Address = info[8];
         }
 
     }

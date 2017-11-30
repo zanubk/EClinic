@@ -395,3 +395,6 @@ C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic\EClinic-WebApp\EClinic-WebApp
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.csprojResolveAssemblyReference.cache
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.dll
 C:\Users\ZanubKhan\Downloads\Proep\EClinic\EClinic\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.pdb
+C:\Users\Monica\Desktop\ProEP\git 4\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Monica\Desktop\ProEP\git 4\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.dll
+C:\Users\Monica\Desktop\ProEP\git 4\EClinic-WebApp\EClinic-WebApp\obj\Debug\EClinic-WebApp.pdb

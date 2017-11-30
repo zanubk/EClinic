@@ -354,6 +354,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\IDoctorProfile.cs" />
     <Compile Include="Views\IRegister.cs" />
     <Compile Include="Views\ISignIn.cs" />
   </ItemGroup>
